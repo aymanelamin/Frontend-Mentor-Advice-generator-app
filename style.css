@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+}
+#mainContainer {
+    width: 40%;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1.3vw;
+    padding: 2vw 3.5vw 0vw 3.5vw;
+    text-align: center;
+}
+#adviceId {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: .9vw;
+    letter-spacing: .3vw;
+    margin: 1.5vw 0 1.7vw 0;
+}
+#advice {
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 2.5vw;
+    font-size: 1.9444444444vw;
+}
+#patternDividerDesktop {
+    margin-bottom: .1vw;
+    width: 93%;
+}
+#diceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: hsl(150, 100%, 66%);
+    width: 5vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    top: 2.5vw;
+    cursor: pointer;
+}
+#diceContainer:active {
+    box-shadow: 0 0 5vw hsl(150, 100%, 66%);
+}
+
+#patternDividerMobile {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        align-items: flex-start;
+    }
+    #patternDividerMobile {
+        display: inline;
+        width: 93%
+    }
+    #patternDividerDesktop {
+        display: none;
+    }
+    #mainContainer {
+        margin-top: 25%;
+        width: 90%;
+        border-radius: 2.5vw;
+        padding: 2vw 6vw 0vw 6vw;
+    }
+    #adviceId {
+        font-size: 2.8vw;
+        letter-spacing: .9vw;
+        margin: 8vw 0 7vw 0;
+    }
+    #advice {
+        margin-bottom: 2.7vw;
+        font-size: 6vw;
+    }
+    #patternDividerDesktop {
+        margin-bottom: .1vw;
+        width: 93%;
+    }
+    #diceContainer {
+        width: 18vw;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        position: relative;
+        top: 9vw;
+        cursor: pointer;
+    }
+}
